@@ -9,8 +9,6 @@ me as your friends on github. Happy coding, guys!!!
 ------How to use Git/Github for web development teamwork: A basic exercise--------
 Simply follow the instructions in this brief manual.
 
-Keep in mind that Microverse encourages it's students to search for their own solutions online. If you don't know how to do something required by this exercise, try to google it first. If you still encounte trouble, feel free to contact your Practice Sessions Coordinator.
-
 Before we begin, choose one teammate to be Student A, and another to be Student B. If you've already completed steps 1-3 feel free to skip them. Once you're ready, just follow these steps in order:
 
 Both A and B: Create an account on https://github.com/.
