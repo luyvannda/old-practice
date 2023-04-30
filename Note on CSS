@@ -1,0 +1,145 @@
+<style>
+    body {
+      background-color: white;
+      font-family: monospace;
+      color: green;
+      min-height: 50em;
+    }
+    #orange-text {
+      color: orange;
+    }
+    .pink-text {
+      color: pink !important;
+    }
+    .blue-text {
+      color: blue;
+    }
+    h1 {
+      position: relative;
+      top: 15px;
+    }
+
+    h3 { 
+        position: relative;  
+        top: 5px;
+        left: 5px;
+    }
+
+    #searchbar{
+        position:absolute;
+        bottom: 10px;
+        left: 10px;
+    }
+
+    section, aside{
+      padding: 2px;
+      background-color: cyan;
+    }
+
+    #left{
+      float: left;
+    }
+    #right{
+      float: right;
+    }
+
+    #navbar {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: #d5d0d0;
+  }
+    nav ul {
+    margin: 0px;
+    padding: 5px 0px 5px 30px;
+  }
+  nav li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+
+  div {
+    width: 60%;
+    height: 50px;
+    margin-top: 60px;
+  }
+
+  .first {
+    background-color: red;
+    position: absolute;
+    z-index: 2;
+  }
+  .second {
+    background-color: blue;
+    position: absolute;
+    left: 40px;
+    top: 160px;
+  }
+  </style>
+  <h1 id="orange-text" class="pink-text blue-text" 
+  style="color: white">Hello World!</h1>
+
+<!--
+CSS: Remember that our pink-text class was overridden by subsequent class 
+declarations, id declarations, and inline styles. However can overriden all 
+style with !important next to the color of the text.
+-->
+
+<head>
+
+<!-- We use float to assigned each of below elements to left or right-->  
+<section id="left">
+  <h2>Content</h2>
+  <p>Good stuff</p>
+</section>
+<aside id="right">
+  <h2>Sidebar</h2>
+  <p>Links</p>
+</aside>
+
+<!-- Below code used to create a navigation bar, we also asign position to fixed
+so it still displayed after we scroll up-->
+
+<nav id="navbar">
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+
+</head>
+
+<body>
+<h2> On Being Well-Positioned </h2>
+      <h3>Move me!</h3>
+      <p>I still think the h3 is where it normally sits.</p>
+
+  
+      <!-- Below code used to create a search bar-->
+        <form id="searchbar">
+          <label for="search">Search:</label>
+          <input type="search" id="search" name="search">
+          <input type="submit" name="submit" value="Go!">
+        </form>
+  
+      
+      <!--Change the Position of Overlapping Elements with the z-index Property
+       z-index 1 will come first even if it does not appear first in order of
+      html appearance-->
+      <p> Here are two overlapping elements use z-index to fix it</p>
+      
+      <div class="first" ></div>
+      <div class="second"></div>
+
+    </body>
+
+<!-- 1: css allow us to move any element away from it default position. All we need
+to do is set "position: relalive;" and move it. Using the top offset moved the
+ h3 downwards. Likewise, using a left offset moves an item to the right.
+2: we can also make an absolute position for sth that will not care about other 
+element. It can move to assigned position and can also overlap with other content.
+3: fixed position can be used to make a content not moving even if we scroll up 
+and down. 4: we can use float left or right to assign element to fixed in that
+position-->
