@@ -11,12 +11,6 @@ Simply follow the instructions in this brief manual.
 
 Before we begin, choose one teammate to be Student A, and another to be Student B. If you've already completed steps 1-3 feel free to skip them. Once you're ready, just follow these steps in order:
 
-Both A and B: Create an account on https://github.com/.
-Both A and B: Download and install git. Windows users can use https://gitforwindows.org/. Linux users can use sudo apt-get install git instead.
-Both A and B: Download and install Visual Studio Code from here: https://code.visualstudio.com/download. This may take some time, so be patient.
-Student A: Create a new github repository. If you've never done this before, google How to create a new github repository.
-Student A: Add student B as a collaborator to your newly created repository. Again: use google here if you are unfamiliar with this process.
-Student B: You should receive an e-mail with an invitation to become a collaborator. Open it, and accept the invitation on GitHub.
 Both A and B: Clone the repository using the git clone command in terminal you installed on step 2.
 Both A and B: Once you've cloned the repo folder on your terminal, use the cd your-repo-name command to navigate into the repository folder. Just replace your-repo-name with the name you used to create the repository on github.
 Both A and B: Use the pwd command to display the path where the project was saved in your computer.
