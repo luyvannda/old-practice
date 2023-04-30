@@ -1,0 +1,119 @@
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" 
+type="text/css">
+<!-- this link to google font Lobster and set up new font-family. It is recommended
+practice to include generic font incase our import font not working. Generic font 
+families include monospace, serif and sans-serif.-->
+
+<style>
+.round-green-border {border-width: 10px; border-style: solid; border-color: green;
+  border-radius: 50%;}  
+.thick-blue-border {border-width: 5px; border-style: solid; border-color: blue;
+border-radius: 10px}  
+.smaller-image {width: 500px ;}
+.red-text {color:red;}
+.silver-background { background-color: silver;}
+h1 {font-size: 24px; font-family: Lobster, monospace;}
+h2 { color: blueviolet;}  
+
+body {background: url("https://cdn-media-1.freecodecamp.org/imgr/MJAkxbh.png")}
+#life-paragraph { background-color: lightpink;}
+footer{ color: deepskyblue;}
+p {font-size: 16px; font-family: 'Times New Roman', Times, serif;}
+</style>
+
+
+<head><h1 style="color:forestgreen;"> Joe Joe HTML Practice </h1>
+<!-- css: 1: change color of text to individual element but there are better ways
+to apply css style. 2: We can also create a class of style that are reusable
+in every element by for example: assign color to .red-text. 3: We can also
+change font-size and assign font-family to any element within element selector
+(style). 4:when the image surrounded by border we can round corner using
+border-radius. 5: border radius = 50% create a circular image inside
+the border. 6: use background-color to set it in any element. 7: can also get
+background color from url --> 
+
+
+<h2> subheading number 2 and so on</h2>
+</head>
+
+<body id="top">
+<form action="https://www.google.com/search?q=" target="_blank"> <input type="text" 
+placeholder="What's on your mind?" required> <button type="submit">submit</button> 
+</form>
+
+<div>
+<p class="red-text">Tell me your gender</p> 
+<label> <input type ="radio" name="gender" checked>Male </label>
+<label> <input type="radio" name="gender">Female </label>
+<label> <input type="radio" name="gender"> Prefer not to reveal </label>
+</div>
+
+<div> 
+<p>what is your personality? Pls check all that applies!!!</p> 
+<label> <input type="checkbox" name="personality" checked> hotheaded </label>
+<label> <input type="checkbox" name="personality"> cunning </label>
+<label> <input type="checkbox" name="personality"> left handed </label>
+</div>
+
+
+<!-- above how to create a text field and create a placeholder before users input
+anything then nest input inside a form element point to a url and add a submit
+button to the end of the form element. Final create radio and checkbox for 
+mutilple choices questions-->
+
+<p> click here to go to <a href="#bottom">the bottom</a> </p>
+
+<a href="https://www.facebook.com/lvannda/" target="_blank"> 
+  <img class="smaller-image thick-blue-border" src="https://bit.ly/3Vb2lti" alt="my wedding photos">
+</a>
+
+<!-- img src: help get image online to the website while alt will be displayed
+should the image not working, while a href make the photo clickable to outside links
+ -->
+
+<p> This is paragraph. We love to write a lot of thing in this space. Please follow 
+  this <a href="https://www.freecodecamp.org" target="_blank"> link to freecodecamp</a></p>
+<!--a href provide an external point to other web while target="_blank" make it
+open in new browser tab  -->
+  <div class ="silver-background"> 
+  <p>Things cats love:</p>
+    <ul>
+      <li>cat nip</li>
+      <li>milk</li>
+    </ul>
+    <p>Top 3 things cats hate:</p>
+    <ol>
+      <li>smellly sock</li>
+      <li>noisy street</li> 
+    </ol>
+  </div>
+<!-- Above code: ul create unordered list with bullet point / ol for ordered list
+that have number-->
+
+
+<p>Here is the second photo. Follow me on facebook by clicking on the photo</p>
+<a href="https://www.facebook.com/lvannda/" target="_blank"> 
+  <img src="https://bit.ly/3V50BBN" alt="My wedding photo with family" 
+  class="smaller-image round-green-border"> </a>
+
+<!--In second photo, we give two class of style to the image by using space:
+smaller-image & thick-green-border. We also learned how to resize image using
+class in style -->
+
+<p id ="life-paragraph"> When the time is rife, people will collect their fruit of labor. All of us are
+  destined to be someone great as long as we try our best and hustle everyday. Don't 
+  let anybody tell you it can't be done. Because life is moving forward, not moving
+backward.</p> 
+
+<!-- we can set an id to any single element that we can want to style individually. 
+  Remember id must be unique to individual element. when id and class is conflicted
+id will win. In element selector begin with # to style an id instead of . that we 
+normally use with class -->
+
+
+<p> click here to go to <a href="#top">  the top </a> </p>
+</body>
+ 
+
+<footer id="bottom"> copyrights by JoeJoe</footer>
+<!-- we can create internal link link by assigning id to <a href="#bottom"></a> -->
