@@ -1,6 +1,6 @@
-let name = "John";
+let ourPlanet = "Earth";
 
-let admin = name;
+let newUser = "Joe Joe";
 
-alert(admin);
+alert("Welcome " + newUser + " to planet " + ourPlanet + "!");
 
