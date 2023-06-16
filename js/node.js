@@ -1,5 +1,16 @@
-let text = "Apple, Banana, Kiwi";
-let textLength = text.length;
-console.log(textLength);
+let userName = prompt("Who's there");
 
-let part = text.slice(-12, -6);
+if (userName === "Admin") {
+  let password = prompt("Password?")
+  if (password === "TheMaster") {
+    alert(`Welcome ${userName}`);
+  } else if (password == "" || password == null) {
+    alert("Canceled")
+  } else {
+    alert("Wrong Password!!!")
+  }
+} else if (userName == "" || userName == null) {
+  alert("Canceled");
+} else {
+  alert("I don't know you!!!");
+} 
