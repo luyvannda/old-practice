@@ -1,15 +1,18 @@
-let input = prompt("Type a number", "0");
+// convert this code into if...else statement
 
-if (input == null) {
-  alert("You cancelled the prompt");
-} else if (isNaN(input)) {
-  alert("Not a number please refresh and try again");
-} else if (input > 0) {
-  alert("Greater than zero: a positive number");
-} else if (input < 0) {
-  alert("Less than zero: a negative number");
-} else if (input == 0) {
-  alert("Hello Zero!!!");
-} else {
-  alert("I don't recognize your input");
+
+switch (browser) {
+  case 'Edge':
+    alert("You've got the Edge!");
+    break;
+
+  case 'Chrome':
+  case 'Firefox':
+  case 'Safari':
+  case 'Opera':
+    alert('Okay we support these browsers too');
+    break;
+
+  default:
+    alert('We hope that this page looks ok!');
 }
