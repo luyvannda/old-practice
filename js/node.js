@@ -1,21 +1,15 @@
-// change this one into switch statement
-
-let a = +prompt('a?', '');
-
-switch (a) {
-  case 0:
-    alert(0);
-    break;
-
-  case 1:
-    alert(1);
-    break;
-
-  case 2:
-  case 3:
-    alert('2,3');
-    break;
-
-  default:
-    alert("Not between 0 and 3");
+function capitalize(string) {
+  let lowerCase = string.toLowerCase();
+  let firstLetter = lowerCase.charAt().toUpperCase();
+  return firstLetter + (lowerCase.slice(1));
 }
+
+let result = capitalize("fistOFFury");
+console.log(result);
+
+
+
+/* Write a function called capitalize that takes a string and returns that string
+with only the first letter capitalized. Make sure that it can take strings 
+that are lowercase, UPPERCASE or BoTh.
+*/
